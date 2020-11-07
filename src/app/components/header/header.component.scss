@@ -1,0 +1,22 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.icon-wrapper {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    font-size: 40px;
+    color: grey;
+    top: -15px;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+    padding: 5px 0;
+    &:hover {
+      color: black;
+    }
+  }
+  

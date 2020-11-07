@@ -1,0 +1,45 @@
+.footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid grey ;
+}
+
+.btn-wrap{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.filter-btn{
+    padding: 5px;
+    margin-left: 15px;
+    border: none;
+    background-color: white;
+    transition: .2s ease-in-out;
+    border-radius: 5px;
+    &:hover{
+        background-color: #e9e1e1;
+    }
+    &.active{
+        border: 1px solid grey;
+    }
+    & .clear-completed-btn{
+        visibility: visible;
+        &.visible{
+            visibility: visible;  
+        }
+    }
+
+    &.clear-completed-btn{
+        visibility: hidden;
+
+        &.visible{
+            visibility: visible;
+        }
+    }
+
+}
+
+.items-count{
+    padding-left: 10px;
+}

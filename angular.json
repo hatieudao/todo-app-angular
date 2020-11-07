@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/eva-icons/eva.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +125,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "todo-app"
 }

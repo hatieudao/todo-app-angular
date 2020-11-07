@@ -1,0 +1,55 @@
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 60px;
+    font-size: 30px;
+    transition: 0.2s all ease-in-out;
+    position: relative;
+
+    &:hover{
+        background-color: #ebe7e7;
+    }
+
+    &.isDone{
+        text-decoration: line-through;
+        color: grey;
+    }
+
+    & .todo{
+        display: flex;
+        align-items: center;
+    }
+
+    & .todo input{
+        height: 30px;
+        width: 30px;
+        margin: 0 20px 0 10px;
+    }
+
+    & .icon-wrapper {
+        
+        transition: .2s all ease-in-out;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+        
+        & .eva-edit-outline:hover{
+            color: green;
+        }
+
+        & .eva-close:hover{
+            color: tomato;
+        }
+    }
+
+    & .form-edit{
+        position: absolute;
+        left: 45px;
+        
+    }
+   
+}

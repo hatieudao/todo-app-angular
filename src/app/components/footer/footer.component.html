@@ -1,0 +1,14 @@
+<div class="footer">
+    <span class="items-count">
+        All: {{length}} item{{length >1? 's':''}}
+    </span>
+    <div class="btn-wrap">
+        <button type="button" class="filter-btn" *ngFor="let btn of filterButtons" [ngClass]="{active: btn.isActive}"
+            (click)="filterTodos(btn.type); setActiveBtn(btn.type)">
+            {{btn.label}}
+        </button>
+    </div>
+    <button type="button" class="filter-btn clear-completed-btn" [ngClass]="{visible: hasCompleted$ | async }"
+        (click)="deleteCompleted()">Clear
+        Completed</button>
+</div>

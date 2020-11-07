@@ -1,0 +1,16 @@
+input {
+    width: 90%;
+    height: 27px;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    display: block;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-left: 45px;
+  }
+  
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+  }
